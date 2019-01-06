@@ -6,10 +6,7 @@ const token = '777935821:AAE7a9-qKmJDAIfaLMWqtHHXhZMd3J5v7QM';
 
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, {
-	polling: true,
-	request: {
-		proxy: 'https://188.166.249.2:9050/'
-	}
+	polling: true
 });
 
 // Matches "/echo [whatever]"
