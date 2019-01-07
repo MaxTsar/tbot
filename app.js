@@ -26,7 +26,7 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
 // messages.
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
-  console.log('> > >', msg)
+  console.log('> > >', msg.text)
   // send a message to the chat acknowledging receipt of their message
-  bot.sendMessage(chatId, 'Received your message');
+  bot.sendMessage(chatId, `Received your message ${msg.text}`);
 });
